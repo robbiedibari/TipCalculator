@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TipCalculator</string>
+    <string name="title"> Don\'t Be Greedy</string>
+    <string name="amount">Bill amount: </string>
+    <string name="second_text">Tip:</string>
+
+    <string name="split">Split</string>
+    <string name="total">Total each:</string>
+    <string name="tip_percentage">Choose tip %</string>
+    <string-array name ="Percentage">
+        <item>Don\'t be Cheap!</item>
+        <item>18%</item>
+        <item>20%</item>
+        <item>25%</item>
+        <item>30%</item>
+    </string-array>
+</resources>

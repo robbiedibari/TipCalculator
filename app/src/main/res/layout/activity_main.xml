@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/Light_Gray"
+    tools:context=".MainActivity">
+
+
+    <!-- EditText for entering the number of people -->
+
+    <!-- Button to calculate the split amount -->
+
+    <!-- TextView to display the split amount -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/title"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/textAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/amount"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="24dp"/>
+
+    <EditText
+        android:id="@+id/checkText"
+        android:layout_width="179dp"
+        android:layout_height="39dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:hint="$0.00"
+        android:textColorHint="#999999"
+        android:inputType="numberDecimal"
+        android:textColor="#333333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAmount"
+        app:layout_goneMarginLeft="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="24dp"/>
+
+    <TextView
+        android:id="@+id/choseTipText"
+        android:layout_width="127dp"
+        android:layout_height="38dp"
+        android:text="@string/tip_percentage"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkText"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="24dp"/>
+
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Don't Be Cheap!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choseTipText"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Tip Total:"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin" />
+
+    <EditText
+        android:id="@+id/TipTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="72dp"
+        android:background="@android:color/transparent"
+        android:hint="Tip Amount: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spin" />
+
+    <EditText
+        android:id="@+id/TotalAmount"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:background="@android:color/transparent"
+        android:hint="Total Amount"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/numOfPeople"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin" />
+
+    <EditText
+        android:id="@+id/numOfPeople"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:background="@android:color/transparent"
+        android:hint="#People"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TotalAmount"
+        app:layout_constraintTop_toBottomOf="@+id/spin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
